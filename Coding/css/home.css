@@ -186,6 +186,7 @@ span {cursor:pointer; }
 .number{
 	margin:40px 60px;
 }
+
 .minus, .plus{
 	width:20px;
 	height:20px;
@@ -193,20 +194,20 @@ span {cursor:pointer; }
 	border-radius:4px;
 	padding:8px 5px 8px 5px;
 	border:1px solid #ddd;
-display: inline-block;
-vertical-align: middle;
-text-align: center;
+	display: inline-block;
+	vertical-align: middle;
+	text-align: center;
 }
 
 input.zaehler {
 	height:34px;
-width: 100px;
-text-align: center;
-font-size: 26px;
+	width: 100px;
+	text-align: center;
+	font-size: 26px;
 	border:1px solid #ddd;
 	border-radius:4px;
-display: inline-block;
-vertical-align: middle;
+	display: inline-block;
+	vertical-align: middle;
 }	
 
 
@@ -970,30 +971,9 @@ input.inp_pass{
 	margin-top: 50px;
 }
 
-
-.wasserglas_07{
-	height: 50px;
-	width: auto;
-	object-fit: cover;	
-	margin-left: 12px;
-}
-
-.wasserglas_05{
-	height: 40px;
-	width: auto;
-	object-fit: cover;
-	margin-left: 4px;	
-}
-
-.wasserglas_03{
-	height: 30px;
-	width: auto;
-	object-fit: cover;	
-	margin-left: 12px;
-}
-
 .button_wasser{
-	margin-top: 20px;
+	text-align: center;
+	font-size: 11px;
 }
 
 .tabelle_wasser{
