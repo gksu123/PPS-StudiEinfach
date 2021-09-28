@@ -13,48 +13,6 @@
   }
 
   @import url('https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,500;1,400;1,500;1,600&family=Source+Sans+Pro:wght@600&display=swap');
-  h1 { 
-      font-size: 2.5em;
-	  font-family: 'Playfair Display', serif;
-	}
-
-	h2 {
-		display: block;
-		font-size: 1.5em;
-		margin-top: 0.83em;
-		margin-bottom: 0.83em;
-		margin-left: 0;
-		margin-right: 0;
-		font-weight: bold;
-	  }
-
-	h3 {
-		display: block;
-		font-size: 1em;
-		font-size: 1.17em;
-		margin-bottom: 1.33em;
-		font-weight: bold;
-	  }
-	
-	  h4 {
-		display: block;
-		font-size: 1em;
-		margin-top: 1.33em;
-		margin-bottom: 1.33em;
-		margin-left: 0;
-		margin-right: 0;
-		font-weight: bold;
-	  }
-
-	  h5 {
-		display: block;
-		font-size: .83em;
-		margin-top: 1.67em;
-		margin-bottom: 1.67em;
-		margin-left: 0;
-		margin-right: 0;
-		font-weight: bold;
-	  }
 
   a, abbr, acronym, address, applet, article, aside, audio, big, blockquote, body, canvas, caption, center, cite, code, dd, del, details, dfn, div, dl, dt, em, embed, fieldset, figcaption, figure, h6, header, hgroup, html, i, iframe, img, ins, kbd, label, legend, mark, menu, nav, object, output, pre, q, ruby, s, samp, section, select, small, strike, strong, sub, summary, sup,  tfoot, th, thead, time, tt, u, ul, var, video {
     margin:0;
@@ -78,6 +36,26 @@
     line-height:18px;
   }
   
+
+/*** Footer ***/
+.footer {
+	position: fixed;
+	left: 0;
+	bottom: 0;
+	width: 100%;
+	background-color: #ECECEC;
+	color: black;
+	text-align: center;
+	box-shadow: 1px 1px 15px grey;
+}
+
+.footer1 {
+    clear: both;
+    position: relative;
+    height: 200px;
+    margin-top: -200px;
+}
+
 
 /*** Header ***/
 .header {
@@ -344,49 +322,44 @@ header {
   }
 
 
-/*----------------------------Foren-----------------------*/
+/*----------------------------Foren - https://www.codeseek.co/andytran/draggable-chatbox-OPxVmq-----------------------*/
 .chat {
   background: #ffffff;
-  width: 300px;
+  width: 1000;
   margin: 0 auto;
+  margin: 0 62px 60px 62px;
 }
-.chat header {
-  background: #bd6982;
-  padding: 10px 15px;
-  color: #ffffff;
-  font-size: 14px;
-  cursor: move;
-}
-.chat header:before,
-.chat header:after {
-  display: block;
-  content: '';
-  clear: both;
-}
+
+
 .chat header h2,
 .chat .body ul li .content h3 {
   margin: 0;
   padding: 0;
-  font-size: 14px;
+  font-size: 16px;
   float: left;
 }
+
 .chat header h2 a {
   color: #ffffff;
   text-decoration: none;
 }
+
 .chat header .tools {
   list-style: none;
   margin: 0;
   padding: 0;
   float: right;
 }
+
 .chat header .tools li {
   display: inline-block;
   margin-right: 6px;
 }
+
 .chat header .tools li:last-child {
   margin: 0;
 }
+
 .chat header .tools li a {
   color: #ffffff;
   text-decoration: none;
@@ -396,18 +369,22 @@ header {
   -o-transition: all 0.3s linear 0s;
   transition: all 0.3s linear 0s;
 }
+
 .chat .body {
   position: relative;
   max-height: 360px;
   overflow-y: scroll;
 }
+
 .chat .body .search {
   display: none;
   width: 100%;
 }
+
 .chat .body .search.opened {
   display: block;
 }
+
 .chat .body .search input {
   width: 100%;
   margin: 0;
@@ -416,12 +393,14 @@ header {
   -webkti-box-size: border-box;
   -moz-box-size: border-box;
 }
+
 .chat .body ul {
   list-style: none;
   padding: 0;
   margin: 0;
   border-top: 1px solid #f2f2f2;
 }
+
 .chat .body ul li {
   position: relative;
   background: #ffffff;
@@ -430,61 +409,78 @@ header {
   padding: 10px;
   box-sizing: border-box;
 }
+
 .chat .body ul li:before,
 .chat .body ul li:after {
   display: block;
   content: '';
   clear: both;
 }
+
 .chat .body ul li:hover .thumbnail {
-  background: #bd6982;
+  background: #69bd6d;
 }
+
 .chat .body ul li:nth-child(2n) {
   background: #f2f2f2;
 }
+
 .chat .body ul li .thumbnail {
   display: inline-block;
   background: #bfbfbf;
-  width: 50px;
+  width: 80px;
   color: #ffffff;
-  line-height: 50px;
+  line-height: 80px;
   text-align: center;
   text-decoration: none;
+  margin-left: 5px;
 }
+
 .chat .body ul li .thumbnail img {
   width: 100%;
 }
+
+.thumbnail{
+  font-size: 20px;
+}
+
 .chat .body ul li .content {
   display: inline-block;
   margin-left: 6px;
   vertical-align: top;
   line-height: 1;
 }
+
 .chat .body ul li .content h3 {
   display: block;
   width: 100%;
   margin-bottom: 5px;
   color: #808080;
 }
+
 .chat .body ul li .content .preview {
   display: block;
   width: 100%;
-  max-width: 200px;
-  margin-bottom: 5px;
-  color: #cccccc;
-  font-size: 12px;
+  max-width: 800px;
+  margin-bottom: 25px;
+  color: #9c9c9c;
+  font-size: 14px;
 }
+
 .chat .body ul li .content .meta {
   color: #b3b3b3;
   font-size: 12px;
 }
+
 .chat .body ul li .content .meta a {
   color: #999999;
   text-decoration: none;
 }
+
 .chat .body ul li .content .meta a:hover {
   text-decoration: underline;
 }
+
 .chat .body ul li .message {
   display: none;
   position: absolute;
@@ -496,6 +492,7 @@ header {
   padding: 10px;
   box-sizing: border-box;
 }
+
 .chat footer a {
   background: #bd6982;
   display: block;
@@ -507,14 +504,17 @@ header {
   text-decoration: none;
   box-sizing: border-box;
 }
+
 .chat footer a:hover {
   background: #cd8ca0;
 }
+
 .info {
   width: 300px;
   margin: 25px auto;
   text-align: center;
 }
+
 .info h1 {
   margin: 0;
   padding: 0;
@@ -522,20 +522,35 @@ header {
   font-weight: 400;
   color: #333333;
 }
+
 .info span {
   color: #666666;
   font-size: 12px;
 }
+
 .info span a {
   color: #000000;
   text-decoration: none;
 }
+
 .info span .fa {
   color: #bd6982;
 }
+
 .info span .spoilers {
   color: #999999;
   margin-top: 5px;
   font-size: 10px;
 }
 
+.ueberschrift_chat{
+  width: auto;
+  margin: 20px 62px 20px 62px;
+  padding-bottom: 20px;
+  border-bottom: 1px solid black;
+}
+
+
+.hiii{
+  margin: 20px 0 20px 80px;
+}

@@ -1052,3 +1052,61 @@ label.überschrift_öffentlich{
 	margin: 0 0 0 61px;
 	font-size: 15px;
 }
+
+
+/*-------------------Kalender-------------------------------*/
+.calendar_link {
+	font-family: Arial;
+	font-size: 18px;
+	text-align: center;
+	color: #000000;
+	text-decoration: none;
+}
+
+.calendar_head {
+	font-family: Arial;
+	font-size: 15px;
+	font-weight: bold;
+	text-align: center;
+	width: 25px;
+}
+
+.calendar_head_month {
+	font-family: Arial;
+	font-size: 20px;
+	font-weight: bold;
+	text-align: center;
+	width: 25px;
+	background-color: #385e38;
+	color: #FFFFFF;
+}
+
+.calendar_day {
+	font-family: Arial;
+	font-size: 18px;
+	font-weight: bold;
+	text-align: center;
+	width: 25px;
+	color: #FFFFFF;
+	background-color: #7cc488;
+}
+
+.calendar_entry {
+	font-family: Arial;
+	font-size: 18px;
+	text-align: center;
+}
+
+.calendar{
+	margin: 62px 0 0 62px;
+	width: 1155px;
+	height: 700px;
+}
+
+#myform{
+	margin: 20px 0 0 62px;
+}
+
+#datum{
+	height: 50px;
+}
