@@ -1,0 +1,114 @@
+<!DOCTYPE html>
+<html lang="de">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Projekt im Modul Entwicklungsprojekt</title>
+    <link rel="stylesheet" href="/css/home.css">
+    <link rel="stylesheet" href="/css/fortschritt.css">
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.1.0/jquery.min.js"></script>
+
+</head>
+
+
+    <body>
+<!----https://www.w3schools.com/howto/howto_js_fullscreen_overlay.asp----->
+    <div id="myNav" class="overlay">
+        <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
+        <div class="overlay-content">
+            <a href="/Support.html">Support</a><br>
+            <a href="/Einstellungen.html">Einstellungen</a><br>
+            <a href="/html/Login/Login.html">Abmelden</a>
+        </div>
+    </div>
+
+
+    <header>
+        <div class="header">
+            <h1 class="logo">StudiereEinfach</h1>
+        </div>
+    </header>
+
+       
+    <div class="header2">
+        <span class="scal" style="font-size:30px;cursor:pointer" onclick="openNav()">&#9776;</span>
+        <a class="header-menu_1" href="/Homepage.html">Startseite</a>
+        <div class="dropdown">
+        <a class="header-menu" href="/Lernen.html">Lernen</a>
+        <div class="dropdown_content">
+            <a class="dropdown_text_nichts"><p>Zum Lernen</p></a>
+            <a href="/html/Lernen/Karteikarten.html"><p class="dropdown_text_übung">Karteikarten</p></a>
+            <a href="/html/Lernen/Dokumente.html"><p class="dropdown_text_übung">Dokumente</p></a>
+            <a href="/html/Lernen/Converter.html"><p class="dropdown_text_übung">Converter</p></a>
+            <a href="/html/Lernen/Statistik.html"><p class="dropdown_text_übung">Lernstatistik</p></a>
+        </div>
+        </div>
+        <div class="dropdown">
+            <a class="header-menu" href="/Kalender.html">Kalender</a>
+            <div class="dropdown_content">
+                <a class="dropdown_text"><p>Zum Kalender</p></a>
+                <a href="/html/Auswertung-Verlauf/woechentlich.html"><p class="dropdown_text_übung">Stundenplan</p></a>
+                <a href="/html/Auswertung-Verlauf/monatlich.html"><p class="dropdown_text_übung">Praktikumsplan</p></a>
+            </div>
+            </div>
+        <div class="dropdown">
+        <a class="header-menu">Forum</a>
+        <div class="dropdown_content">
+            <a class="dropdown_text_nichts"><p>Zu den Foren</p></a>
+            <a href="/html/Foren/hochschule.html"><p class="dropdown_text_übung">Hochschule</p></a>
+            <a href="/html/Foren/studiengang.html"><p class="dropdown_text_übung">Studiengang</p></a>
+        </div>
+    </div>
+    <div class="dropdown">
+        <a class="header-menu">Statistik</a>
+        <div class="dropdown_content">
+            <a class="dropdown_text_nichts"><p>Zu den Statistiken</p></a>
+            <a href="/html/Auswertung-Verlauf/woechentlich.html"><p class="dropdown_text_übung">Lernstatistik: Gelernte Stunden (Tag)</p></a>
+            <a href="/html/Auswertung-Verlauf/monatlich.html"><p class="dropdown_text_übung">Lernstatistik: Gelernte Tage (Woche)</p></a>
+            <a href="/html/Auswertung-Verlauf/pausen.html"><p class="dropdown_text_übung">Lernstatistik: Gemachte Pausen (Tag)</p></a>
+        </div>
+    </div>
+    </div>
+
+<img src="/Bilder/Balken/Mathematik1.png" alt="Dehnen" class="grafik">
+
+<!-- https://wiki.selfhtml.org/wiki/HTML/Tutorials/Formulare/Gliederung -->
+<div>
+    <form action="manage_uploads.php" method="post" enctype="multipart/form-data">
+    <!--    <progress id="fortschritt" value="0" max="3"></progress> -->
+        <progress value="66" max="100" data-label="66%"></progress> 
+        <label class="überschrift_privat"> Aufgaben
+            <input class="hochladen" type="button" id="hinzufuegen" name="files1[]" multiple />
+        </label>  
+
+        <label class="überschrift_öffentlich"> Aufgabe 1
+            <input class="hochladen" type="checkbox" id="check" onchange="aktualisiere_progressbar()" checked/> <!--checked/>-->
+        </label>  
+
+        <label class="überschrift_öffentlich"> Aufgabe 2
+            <input class="hochladen" type="checkbox" id="check" onchange="aktualisiere_progressbar()" checked/>
+        </label>  
+
+        <label class="überschrift_öffentlich"> Aufgabe 3
+            <input class="hochladen" type="checkbox" id="check" onchange="aktualisiere_progressbar()"/>
+        </label>  
+    </form>
+</div>
+
+<br>
+
+    <footer>
+        <div class="footer">
+            <p>&copy; Projekt im Modul Entwicklungsprojekt präsentiert von Kimberly Plackenhohn und Eda Serttas</p>
+          </div>
+    </footer>
+
+</body>
+
+<script language="javascript" type="text/javascript" src="/js/fortschrittsanzeige.js"></script>
+<!--<script language="javascript" type="text/javascript" src="/js/lernen.js"></script>-->
+<!--<script language="javascript" type="text/javascript" src="./js/slide-down-menu.js"></script>-->
+
+</html>
+
