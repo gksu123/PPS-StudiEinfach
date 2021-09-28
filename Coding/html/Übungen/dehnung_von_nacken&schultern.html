@@ -1,0 +1,197 @@
+<!DOCTYPE html>
+<html lang="de">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Projekt im Modul Entwicklungsprojekt</title>
+    <link rel="stylesheet" href="/css/home.css">
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.1.0/jquery.min.js"></script>
+</head>
+
+
+<body>
+
+    <div id="myNav" class="overlay">
+        <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
+        <div class="overlay-content">
+            <a href="/Support.html">Support</a><br>
+            <a href="/Einstellungen.html">Einstellungen</a><br>
+            <a href="/html/Login/Login.html">Abmelden</a>
+        </div>
+    </div>
+
+
+    <!----https://www.w3schools.com/howto/howto_js_fullscreen_overlay.asp----->
+    <header>
+        <div class="header">
+            <h1 class="logo">Life's Good</h1>
+        </div>
+    </header>
+
+    <div class="header2">
+        <span class="scal" style="font-size:30px;cursor:pointer" onclick="openNav()">&#9776;</span>
+        <a class="header-menu_1" href="/Homepage.php">Startseite</a>
+        <div class="dropdown">
+        <a class="header-menu" href="/Entspannen.html">Entspannen</a>
+        <div class="dropdown_content">
+            <a class="dropdown_text" href="/Entspannen.html"><p>Zum Entspannen</p></a>
+            <p class="dropdown_text_nichts">Übungen</p>
+            <a href="./atemübungen.html"><p class="dropdown_text_übung">Atemübungen</p></a>
+            <a href="./morgendliches_stretching.html"><p class="dropdown_text_übung">Morgendliches Stretching</p></a>
+            <a href="./dehnungen_vor_dem_zubettgehen.html"><p class="dropdown_text_übung">Dehnung vor dem Zubettgehen</p></a>
+            <a href="./dehnung_von_nacken&schultern.html"><p class="dropdown_text_übung">Dehnung von Nacken und Schultern</p></a>
+        </div>
+        </div>
+        <div class="dropdown">
+            <a class="header-menu" href="/Verlauf.html">Verlauf</a>
+            <div class="dropdown_content">
+                <a class="dropdown_text" href="/Verlauf.html"><p>Zum Verlauf</p></a>
+                <a href="/html/Auswertung-Verlauf/trinkverhalten.html"><p class="dropdown_text_übung">Trinkverhalten</p></a>
+                <a href="/html/Auswertung-Verlauf/woechentlich.php"><p class="dropdown_text_übung">Wöchentlicher Verlauf</p></a>
+                <a href="/html/Auswertung-Verlauf/monatlich.php"><p class="dropdown_text_übung">Monatlicher Verlauf</p></a>
+                <p class="dropdown_text_nichts">Befragung</p>
+                <a href="/html/Umfrage/Monatliche-Umfrage.html"><p class="dropdown_text_übung">Monatliche Umfrage</p></a>
+            </div>
+            </div>
+            <div class="dropdown">
+        <a class="header-menu" href="/Soforthilfe.html">Soforthilfe</a>
+    </div>
+    </div>
+
+    <img src="../../Bilder/übung3_enspannung_rücken&schultern.png" alt="Dehnen" class="grafik">
+
+<div>
+    <h2 class="übung-titel">Kopfnicken</h2>
+    <div class="abstand">
+        <p>Dauer: <strong>00:20</strong></p>
+        <div class="stoppuhr">
+            <button onClick="myTimer = setInterval(myCounter, 1000)">Start</button>
+            <i id="stoppuhr">Starte den Timer!</i>
+        </div>
+        <img src="../../Bilder/Dehnen_Nacken&Schultern/Kopfnicken.jpeg" alt="Dehnen" class="bilder_übung">
+        <img src="../../Bilder/Dehnen_Nacken&Schultern/Kopfnicken1.jpeg" alt="Dehnen" class="bilder_übung">
+    </div><br>
+
+    <h2 class="übung-titel">Kopf drehen</h2>
+    <div class="abstand">
+        <p>Dauer: <strong>00:40</strong></p>
+        <img src="../../Bilder/Dehnen_Nacken&Schultern/Kopfdrehen1.jpeg" alt="Dehnen" class="bilder_übung">
+        <img src="../../Bilder/Dehnen_Nacken&Schultern/Kopfdrehen.jpeg" alt="Dehnen" class="bilder_übung">
+    </div><br>
+
+    <h2 class="übung-titel">Kopf neigen</h2>
+    <div class="abstand">
+        <p>Dauer: <strong>00:40</strong></p>
+        <img src="../../Bilder/Dehnen_Nacken&Schultern/Kopfneigen.jpeg" alt="Dehnen" class="bilder_übung">
+        <img src="../../Bilder/Dehnen_Nacken&Schultern/Kopfneigen1.jpeg" alt="Dehnen" class="bilder_übung">
+    </div><br>
+
+    <h2 class="übung-titel">Hals nach rechts ziehen</h2>
+    <div class="abstand">
+        <p>Dauer: <strong>00:30</strong></p>
+        <img src="../../Bilder/Dehnen_Nacken&Schultern/Hals nach rechts ziehen.jpeg" alt="Dehnen" class="bilder_übung">
+    </div><br>
+
+    <h2 class="übung-titel">Hals nach links ziehen</h2>
+    <div class="abstand">
+        <p>Dauer: <strong>00:30</strong></p>
+        <img src="../../Bilder/Dehnen_Nacken&Schultern/Hals nach links ziehen.jpeg" alt="Dehnen" class="bilder_übung">
+    </div><br>
+
+    <h2 class="übung-titel">Linken Schulterblattheber dehnen</h2>
+    <div class="abstand">
+        <p>Dauer: <strong>00:30</strong></p>
+        <img src="../../Bilder/Dehnen_Nacken&Schultern/Linken Schulterblattheber dehnen1.jpeg" alt="Dehnen" class="bilder_übung">
+        <img src="../../Bilder/Dehnen_Nacken&Schultern/Linken Schulterblattheber dehnen.jpeg" alt="Dehnen" class="bilder_übung">
+    </div><br>
+
+    <h2 class="übung-titel">Rechtes Schulterblattheber dehnen</h2>
+    <div class="abstand">
+        <p>Dauer: <strong>00:30</strong></p>
+        <img src="../../Bilder/Dehnen_Nacken&Schultern/Linken Schulterblattheber dehnen1.jpeg" alt="Dehnen" class="bilder_übung">
+        <img src="../../Bilder/Dehnen_Nacken&Schultern/Rechtes Schulterblattheber dehnen.jpeg" alt="Dehnen" class="bilder_übung">
+    </div><br>
+
+    <h2 class="übung-titel">Schulterkreisen gegen den Uhrzeigersinn</h2>
+    <div class="abstand">
+        <p>Dauer: <strong>00:20</strong></p>
+        <img src="../../Bilder/Dehnen_Nacken&Schultern/Schulterkreisen gegen den Uhrzeigersinn.jpeg" alt="Dehnen" class="bilder_übung">
+        <img src="../../Bilder/Dehnen_Nacken&Schultern/Schulterkreisen gegen den Uhrzeigersinn (2).jpeg" alt="Dehnen" class="bilder_übung">
+    </div><br>
+
+    <h2 class="übung-titel">Schulterkreisen im Uhrzeigersinn</h2>
+    <div class="abstand">
+        <p>Dauer: <strong>00:20</strong></p>
+        <img src="../../Bilder/Dehnen_Nacken&Schultern/Schulterkreisen im den Uhrzeigersinn.jpeg" alt="Dehnen" class="bilder_übung">
+        <img src="../../Bilder/Dehnen_Nacken&Schultern/Schulterkreisen im den Uhrzeigersinn (2).jpeg" alt="Dehnen" class="bilder_übung">
+    </div><br>
+
+    <h2 class="übung-titel">Schulterkreisen nach außen</h2>
+    <div class="abstand">
+        <p>Dauer: <strong>00:40</strong></p>
+        <img src="../../Bilder/Dehnen_Nacken&Schultern/Schulterkreisen nach außen.jpeg" alt="Dehnen" class="bilder_übung">
+        <img src="../../Bilder/Dehnen_Nacken&Schultern/Schulterkreisen nach außen (2).jpeg" alt="Dehnen" class="bilder_übung">
+    </div><br>
+
+    <h2 class="übung-titel">Armkreisen über dem Kopf im Uhrzeigersinn</h2>
+    <div class="abstand">
+        <p>Dauer: <strong>00:20</strong></p>
+        <img src="../../Bilder/Dehnen_Nacken&Schultern/Armkreisen über dem Kopf im Uhrzeigersinn.jpg" alt="Dehnen" class="bilder_übung">
+        <img src="../../Bilder/Dehnen_Nacken&Schultern/Armkreisen über dem Kopf im Uhrzeigersinn (2).jpg" alt="Dehnen" class="bilder_übung">
+        <img src="../../Bilder/Dehnen_Nacken&Schultern/Armkreisen über dem Kopf im Uhrzeigersinn (3).jpg" alt="Dehnen" class="bilder_übung">
+        <img src="../../Bilder/Dehnen_Nacken&Schultern/Armkreisen über dem Kopf im Uhrzeigersinn (4).jpg" alt="Dehnen" class="bilder_übung">
+    </div><br>
+
+    <h2 class="übung-titel">Armkreisen über dem Kopf gegen den Uhrzeigersinn</h2>
+    <div class="abstand">
+        <p>Dauer: <strong>00:20</strong></p>
+        <img src="../../Bilder/Dehnen_Nacken&Schultern/Armkreisen über dem Kopf gegen Uhrzeigersinn (1).jpeg" alt="Dehnen" class="bilder_übung">
+        <img src="../../Bilder/Dehnen_Nacken&Schultern/Armkreisen über dem Kopf gegen Uhrzeigersinn (4).jpeg" alt="Dehnen" class="bilder_übung">
+        <img src="../../Bilder/Dehnen_Nacken&Schultern/Armkreisen über dem Kopf gegen Uhrzeigersinn (3).jpeg" alt="Dehnen" class="bilder_übung">
+        <img src="../../Bilder/Dehnen_Nacken&Schultern/Armkreisen über dem Kopf gegen Uhrzeigersinn (2).jpeg" alt="Dehnen" class="bilder_übung">
+    </div><br>
+
+    <h2 class="übung-titel">Trizepsdehnung links</h2>
+    <div class="abstand">
+        <p>Dauer: <strong>00:20</strong></p>
+        <img src="../../Bilder/Dehnen_Nacken&Schultern/Tripzepsdehnung links.jpeg" alt="Dehnen" class="bilder_übung">
+    </div><br>
+
+    <h2 class="übung-titel">Trizepsdehnung rechts</h2>
+    <div class="abstand">
+        <p>Dauer: <strong>00:20</strong></p>
+        <img src="../../Bilder/Dehnen_Nacken&Schultern/Trizepsdehnung rechts.jpeg" alt="Dehnen" class="bilder_übung">
+    </div><br>
+
+    <h2 class="übung-titel">Hände hinter dem Rücken falten</h2>
+    <div class="abstand">
+        <p>Dauer: <strong>00:30</strong></p>
+        <img src="../../Bilder/Dehnen_Nacken&Schultern/Hände hinter dem Rücken falten.jpeg" alt="Dehnen" class="bilder_übung">
+    </div><br>
+
+    <h2 class="übung-titel">Arme auf dem Boden beugen</h2>
+    <div class="abstand">
+        <p>Dauer: <strong>00:40</strong></p>
+        <img src="../../Bilder/Dehnen_Nacken&Schultern/Arme auf dem Boden beugen.jpeg" alt="Dehnen" class="bilder_übung">
+        <img src="../../Bilder/Dehnen_Nacken&Schultern/Arme auf dem Boden beugen (2).jpeg" alt="Dehnen" class="bilder_übung">
+    </div><br>
+
+    <h2 class="übung-titel">Kobradehnung</h2>
+    <div class="abstand">
+        <p>Dauer: <strong>00:30</strong></p>
+        <img src="../../Bilder/Dehnen_Nacken&Schultern/Kobradehnung.jpeg" alt="Dehnen" class="bilder_übung">
+    </div>
+</div>
+   <br><br><br><br><br><br>
+<footer>
+    <div class="footer">
+        <p>&copy; Projekt im Modul Entwicklungsprojekt präsentiert von Kimberly Plackenhohn und Eda Serttas</p>
+      </div>
+</footer>
+
+</body>
+
+    <script src="/js/slide-down-menu.js"></script>
+    <script src="/js/stoppuhr.js"></script>
+</html>

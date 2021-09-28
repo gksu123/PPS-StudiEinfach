@@ -1,0 +1,155 @@
+<!DOCTYPE html>
+<html lang="de">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Projekt im Modul Entwicklungsprojekt</title>
+  <link rel="stylesheet" href="/css/umfrage.css">
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.1.0/jquery.min.js"></script>
+
+</head>
+
+
+<body>
+
+    <div id="myNav" class="overlay">
+        <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
+        <div class="overlay-content">
+            <a href="/Support.html">Support</a><br>
+            <a href="/Einstellungen.html">Einstellungen</a><br>
+            <a href="/html/Login/Login.html">Abmelden</a>
+        </div>
+    </div>
+
+
+    <!----https://www.w3schools.com/howto/howto_js_fullscreen_overlay.asp----->
+    <header>
+        <div class="header">
+            <h1 class="logo">Life's Good</h1>
+        </div>
+    </header>
+
+        <div class="header2">
+            <span class="scal" style="font-size:30px;cursor:pointer" onclick="openNav()">&#9776;</span>
+            <a class="header-menu_1" href="/Homepage.php">Startseite</a>
+            <div class="dropdown">
+            <a class="header-menu" href="/Entspannen.html">Entspannen</a>
+            <div class="dropdown_content">
+                <a class="dropdown_text" href="Entspannen.html"><p>Zum Entspannen</p></a>
+                <p class="dropdown_text_nichts">Übungen</p>
+                <a href="/html/Übungen/atemübungen.html"><p class="dropdown_text_übung">Atemübungen</p></a>
+                <a href="/html/Übungen/morgendliches_stretching.html"><p class="dropdown_text_übung">Morgendliches Stretching</p></a>
+                <a href="/html/Übungen/dehnungen_vor_dem_zubettgehen.html"><p class="dropdown_text_übung">Dehnung vor dem Zubettgehen</p></a>
+                <a href="/html/Übungen/dehnung_von_nacken&schultern.html"><p class="dropdown_text_übung">Dehnung von Nacken und Schultern</p></a>
+            </div>
+            </div>
+            <div class="dropdown">
+                <a class="header-menu" href="/Verlauf.html">Verlauf</a>
+                <div class="dropdown_content">
+                    <a class="dropdown_text" href="/Verlauf.html"><p>Zum Verlauf</p></a>
+                    <a href="/html/Auswertung-Verlauf/trinkverhalten.html"><p class="dropdown_text_übung">Trinkverhalten</p></a>
+                    <a href="/html/Auswertung-Verlauf/woechentlich.php"><p class="dropdown_text_übung">Wöchentlicher Verlauf</p></a>
+                    <a href="/html/Auswertung-Verlauf/monatlich.php"><p class="dropdown_text_übung">Monatlicher Verlauf</p></a>
+                    <p class="dropdown_text_nichts">Befragung</p>
+                    <a href="/html/Umfrage/Monatliche-Umfrage.html"><p class="dropdown_text_übung">Monatliche Umfrage</p></a>
+                </div>
+                </div>
+                <div class="dropdown">
+            <a class="header-menu" href="/Soforthilfe.html">Soforthilfe</a>
+        </div>
+        </div>
+
+ <!--   <form method="get" action="./teilnahme.html" class="form">-->
+    <form method="post" action="http://127.0.0.1/html/Umfrage/umfrage.php">
+        <h3 class="titel">Bitte nehmen Sie sich die Zeit monatlich an dieser Umfrage teilzunehmen. <br>Die Umfrage ist für Ihre Auswertung wichtig.<br> Um korrekte Ergebnisse zu erhalten bitten wir Sie hierbei ehrlich zu Antworten.</h3>
+    	<hr>
+        
+            <div class="frage1">
+                <p><b>Wie geht es Ihnen derzeit?</b></p>
+                <p>
+                <input type="radio" name="frage1" value="3" id="frage1">
+                <label for="gut">Mir geht es gut. :)</label><br>
+                <input type="radio" name="frage1" value="2" id="frage1">
+                <label for="geht">Es geht. :/</label><br>
+                <input type="radio" name="frage1" value="1" id="frage1">
+                <label for="schlecht">Mir geht es nicht so gut. :(</label><br>
+                </p>
+            </div>
+            <hr>
+            <div class="frage2">
+                <p><b>Wie zufrieden sind Sie zurzeit mit Ihrem Leben?</b></p>
+                <input type="radio" name="frage2" value="3" id="frage2">
+                <label for="zufrieden">Ich bin zufrieden mit meinem Leben.</label><br>
+                <input type="radio" name="frage2" value="2" id="frage2">
+                <label for="soso">Es geht.</label><br>
+                <input type="radio" name="frage2" value="1" id="frage2">
+                <label for="unzufrieden">Ich bin total unzufrieden mit meinem Leben.</label><br>
+            </div>
+            <hr>
+            <div class="frage3">
+                <p><b>Machen Sie außerhalb Ihrer Tätigkeiten noch zusätzlich Sport?</b></p>
+                <input type="radio" name="frage3" value="3" id="frage3">
+                <label for="ja">Ja, regelmäßig.</label><br>
+                <input type="radio" name="frage3" value="2" id="frage3">
+                <label for="abundzu">Ab und zu versuche ich sportliche Aktivitäten zu betreiben.</label><br>
+                <input type="radio" name="frage3" value="1" id="frage3">
+                <label for="nein">So gut wie garnicht.</label><br>
+            </div>
+            <hr>
+            <div class="frage4">
+                <p><b>Haben Sie finanzielle Probleme und/oder Schwierigkeiten?</b></p>
+                <input type="radio" name="frage4" value="2" id="frage4">
+                <label for="nein">Nein, zum Glück nicht.</label><br>
+                <input type="radio" name="frage4" value="1" id="frage4">
+                <label for="ja">Leider, ja.</label><br>
+            </div>
+            <hr>
+            <div class="frage5">
+                <p><b>Reden Sie mit Familie oder Freunden über Ihre Probleme?</b></p>
+                <input type="radio" name="frage5" value="3" id="frage5">
+                <label for="ja">Ja, sie wissen im über alles bescheid.</label><br>
+                <input type="radio" name="frage5" value="2" id="frage5">
+                <label for="abundzu">Manchmal, wenn das Thema aufgeht.</label><br>
+                <input type="radio" name="frage5" value="1" id="frage5">
+                <label for="nein">Nein, tue ich nicht.</label><br>
+            </div>
+            <hr>
+            <div class="frage6">
+                <p><b>Werden Sie von Ihrer Familie unterstützt?</b></p>
+                <input type="radio" name="frage6" value="3" id="frage6">
+                <label for="ja">Ja, sie stehen mir immer zur Seite.</label><br>
+                <input type="radio" name="frage6" value="2" id="frage6">
+                <label for="abundzu">Nur bei Bedarf bekomme ich Unterstützung.</label><br>
+                <input type="radio" name="frage6" value="1" id="frage6">
+                <label for="nein">Nein, ich bin selbstständig.</label><br>
+            </div>
+            <hr>
+<!--        <form method="get" action="./teilnahme.html" class="form">-->
+            <div class="frage7">
+                <p><b>Wie viel Freizeit haben Sie?</b></p>
+                <input type="radio" name="frage7" value="3" id="frage7">
+                <label for="ja">Ich habe genug Freizeit um mich mit Freunden zu treffen oder Filme/Serien etc. zu schauen.</label><br>
+                <input type="radio" name="frage7" value="2" id="frage7">
+                <label for="abundzu">Ich habe gerade so Zeit etwas zu unternehmen oder die Zeit für mich zu nutzen.</label><br>
+                <input type="radio" name="frage7" value="1" id="frage7">
+                <label for="nein">Ich habe kaum Freizeit oder finde generell kaum Zeit für mich.</label><br>
+            </div>
+            
+            <button id="add-btn" type="submit" name="action" value="Senden">Abschicken</button>
+ <!--       </form>-->
+    </form>
+
+
+    <footer>
+        <div class="footer">
+            <p>&copy; Projekt im Modul Entwicklungsprojekt präsentiert von Kimberly Plackenhohn und Eda Serttas</p>
+          </div>
+    </footer>
+
+</body>
+
+    <script language="javascript" type="text/javascript" src="/js/slide-down-menu.js"></script>
+    <script language="javascript" type="text/javascript" src="/js/charts-month.js"></script>
+
+</html>
