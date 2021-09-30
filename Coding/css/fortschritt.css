@@ -1,0 +1,55 @@
+progress {
+    /* text-align:right;*/
+     width: 100%; /* Breite */
+     height: 2.5em;
+     margin-top: -20px;
+     background: lightgrey; /* Hintergrundfarbe */
+     color: green; /* value-Farbe */
+     -webkit-appearance: none;
+     border: none;
+     position:relative;
+     }
+     progress:before {
+     content: attr(data-label);
+     font-size: 2em;
+     vertical-align: 0;
+     color: black;
+
+     /*Position text over the progress bar */
+     position:absolute;
+     top: 7.5px;
+     right: 15px;
+     }
+
+     /* value-Farbe für Firefox */
+     progress::-moz-progress-bar {
+     background: green; /* value-Farbe */
+     }
+
+     /* Chrome und Safari */
+     progress::-webkit-progress-bar {
+     background: transparent;
+     }  
+     progress::-webkit-progress-value {  
+     width: 10em; /* Breite */
+     background: green; /* value-Farbe */
+     border: none; /* Rahmen */
+     }
+
+     .überschrift_privat{
+         font-weight: bold;
+     }
+
+     #hinzufuegen{
+         background-image: url('add_circle_outline_black_24dp.svg');
+         background-color: white;
+         background-size: 40px 40px;
+         height: 40px;
+         width: 40px;
+         border: 0ch;
+     }
+
+     #check{
+         height: 30px;
+         width: 30px;
+     }  
