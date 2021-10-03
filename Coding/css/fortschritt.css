@@ -41,7 +41,7 @@ progress {
      }
 
      #hinzufuegen{
-         background-image: url('add_circle_outline_black_24dp.svg');
+         background-image: url('/Material/add_circle_outline_black_24dp.svg');
          background-color: white;
          background-size: 40px 40px;
          height: 40px;
