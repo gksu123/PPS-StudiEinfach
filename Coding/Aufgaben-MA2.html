@@ -71,27 +71,19 @@
     </div>
     </div>
 
-<img src="/Bilder/Balken/Mathematik1.png" alt="Dehnen" class="grafik">
+<img src="/Bilder/Balken/Mathematik2.png" alt="Dehnen" class="grafik">
 
 <!-- https://wiki.selfhtml.org/wiki/HTML/Tutorials/Formulare/Gliederung -->
 <div>
     <form action="manage_uploads.php" method="post" enctype="multipart/form-data">
-    <!--    <progress id="fortschritt" value="0" max="3"></progress> -->
-        <progress value="66" max="100" data-label="66%"></progress> 
+        <progress id="fortschritt" value="0" max="1"></progress> 
+    <!--    <progress value="66" max="100" data-label="66%"></progress> -->
         <label class="überschrift_privat"> Aufgaben
             <input class="hochladen" type="button" id="hinzufuegen" name="files1[]" multiple />
         </label>  
 
         <label class="überschrift_öffentlich"> Aufgabe 1
-            <input class="hochladen" type="checkbox" id="check" onchange="aktualisiere_progressbar()" checked/> <!--checked/>-->
-        </label>  
-
-        <label class="überschrift_öffentlich"> Aufgabe 2
-            <input class="hochladen" type="checkbox" id="check" onchange="aktualisiere_progressbar()" checked/>
-        </label>  
-
-        <label class="überschrift_öffentlich"> Aufgabe 3
-            <input class="hochladen" type="checkbox" id="check" onchange="aktualisiere_progressbar()"/>
+            <input class="hochladen" type="checkbox" id="check" onchange="aktualisiere_progressbar()" /> <!--checked/>-->
         </label>  
     </form>
 </div>
@@ -107,8 +99,6 @@
 </body>
 
 <script language="javascript" type="text/javascript" src="/js/fortschrittsanzeige.js"></script>
-<!--<script language="javascript" type="text/javascript" src="/js/lernen.js"></script>-->
-<!--<script language="javascript" type="text/javascript" src="./js/slide-down-menu.js"></script>-->
 
 </html>
 
