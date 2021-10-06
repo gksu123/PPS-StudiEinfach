@@ -359,7 +359,7 @@ input.zaehler {
 	object-fit: cover; 
 	width: 100%; 
 	box-shadow: 2px 2px 10px grey;
-	margin: 130px 0 20px 0;
+	margin: 130px 0 -24px 0;
 }
 
 .grafik1{

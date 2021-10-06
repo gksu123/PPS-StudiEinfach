@@ -53,3 +53,32 @@ progress {
          height: 30px;
          width: 30px;
      }  
+
+
+
+
+
+
+     input[type="checkbox"] { 
+       height: 25px; 
+       width: 25px; 
+       /*margin-right: 10px;*/
+       margin-bottom: 10px;
+     }	
+     
+     .ready { font-size: 1.5em; }
+     
+     .progressbar-bar { 
+        border-radius: 7px;
+        width: 100%; /* Breite */
+        height: 5em;
+        margin-top: 21.5px;
+        position:relative;
+     }
+     
+     .progressbar-label {
+       position: absolute;
+       top: 333px;
+       left: 45%;
+       z-index: 2;
+     }
