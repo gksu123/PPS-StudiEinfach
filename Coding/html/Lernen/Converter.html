@@ -7,11 +7,12 @@
     <title>Projekt im Modul Entwicklungsprojekt</title>
     <link rel="stylesheet" href="/css/home.css">
     <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.1.0/jquery.min.js"></script>
+    <script src="https://unpkg.com/convertapi-js@1.0.6-beta.7/lib/convertapi.js"></script>
 </head>
 
 
-    <body>
-<!----https://www.w3schools.com/howto/howto_js_fullscreen_overlay.asp----->
+<body>
+    <!----https://www.w3schools.com/howto/howto_js_fullscreen_overlay.asp----->
     <div id="myNav" class="overlay">
         <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
         <div class="overlay-content">
@@ -28,63 +29,123 @@
         </div>
     </header>
 
-       
+
     <div class="header2">
         <span class="scal" style="font-size:30px;cursor:pointer" onclick="openNav()">&#9776;</span>
         <a class="header-menu_1" href="/html/Homepage.html">Startseite</a>
         <div class="dropdown">
-        <a class="header-menu" href="/html/Lernen.html">Lernen</a>
-        <div class="dropdown_content">
-            <a class="dropdown_text_nichts"><p>Zum Lernen</p></a>
-            <a href="/html/Lernen/Karteikarten.html"><p class="dropdown_text_übung">Karteikarten</p></a>
-            <a href="/html/Lernen/Dokumente.html"><p class="dropdown_text_übung">Dokumente</p></a>
-            <a href="/html/Lernen/Converter.html"><p class="dropdown_text_übung">Converter</p></a>
-            <a href="/html/Lernen/Statistik.html"><p class="dropdown_text_übung">Lernstatistik</p></a>
-        </div>
+            <a class="header-menu" href="/html/Lernen.html">Lernen</a>
+            <div class="dropdown_content">
+                <a class="dropdown_text_nichts">
+                    <p>Zum Lernen</p>
+                </a>
+                <a href="/html/Lernen/Karteikarten.html">
+                    <p class="dropdown_text_übung">Karteikarten</p>
+                </a>
+                <a href="/html/Lernen/Dokumente.html">
+                    <p class="dropdown_text_übung">Dokumente</p>
+                </a>
+                <a href="/html/Lernen/Converter.html">
+                    <p class="dropdown_text_übung">Converter</p>
+                </a>
+                <a href="/html/Lernen/Statistik.html">
+                    <p class="dropdown_text_übung">Lernstatistik</p>
+                </a>
+            </div>
         </div>
         <div class="dropdown">
             <a class="header-menu" href="/html/Kalender.html">Kalender</a>
             <div class="dropdown_content">
-                <a class="dropdown_text"><p>Zum Kalender</p></a>
-                <a href="/html/Auswertung-Verlauf/woechentlich.html"><p class="dropdown_text_übung">Stundenplan</p></a>
-                <a href="/html/Auswertung-Verlauf/monatlich.html"><p class="dropdown_text_übung">Praktikumsplan</p></a>
+                <a class="dropdown_text">
+                    <p>Zum Kalender</p>
+                </a>
+                <a href="/html/Auswertung-Verlauf/woechentlich.html">
+                    <p class="dropdown_text_übung">Stundenplan</p>
+                </a>
+                <a href="/html/Auswertung-Verlauf/monatlich.html">
+                    <p class="dropdown_text_übung">Praktikumsplan</p>
+                </a>
             </div>
-            </div>
+        </div>
         <div class="dropdown">
-        <a class="header-menu">Forum</a>
-        <div class="dropdown_content">
-            <a class="dropdown_text_nichts"><p>Zu den Foren</p></a>
-            <a href="/html/Foren/hochschule.html"><p class="dropdown_text_übung">Hochschule</p></a>
-            <a href="/html/Foren/studiengang.html"><p class="dropdown_text_übung">Studiengang</p></a>
+            <a class="header-menu">Forum</a>
+            <div class="dropdown_content">
+                <a class="dropdown_text_nichts">
+                    <p>Zu den Foren</p>
+                </a>
+                <a href="/html/Foren/hochschule.html">
+                    <p class="dropdown_text_übung">Hochschule</p>
+                </a>
+                <a href="/html/Foren/studiengang.html">
+                    <p class="dropdown_text_übung">Studiengang</p>
+                </a>
+            </div>
+        </div>
+        <div class="dropdown">
+            <a class="header-menu">Statistik</a>
+            <div class="dropdown_content">
+                <a class="dropdown_text_nichts">
+                    <p>Zu den Statistiken</p>
+                </a>
+                <a href="/html/Auswertung-Verlauf/woechentlich.html">
+                    <p class="dropdown_text_übung">Lernstatistik: Gelernte Stunden (Tag)</p>
+                </a>
+                <a href="/html/Auswertung-Verlauf/monatlich.html">
+                    <p class="dropdown_text_übung">Lernstatistik: Gelernte Tage (Woche)</p>
+                </a>
+                <a href="/html/Auswertung-Verlauf/pausen.html">
+                    <p class="dropdown_text_übung">Lernstatistik: Gemachte Pausen (Tag)</p>
+                </a>
+            </div>
         </div>
     </div>
-    <div class="dropdown">
-        <a class="header-menu">Statistik</a>
-        <div class="dropdown_content">
-            <a class="dropdown_text_nichts"><p>Zu den Statistiken</p></a>
-            <a href="/html/Auswertung-Verlauf/woechentlich.html"><p class="dropdown_text_übung">Lernstatistik: Gelernte Stunden (Tag)</p></a>
-            <a href="/html/Auswertung-Verlauf/monatlich.html"><p class="dropdown_text_übung">Lernstatistik: Gelernte Tage (Woche)</p></a>
-            <a href="/html/Auswertung-Verlauf/pausen.html"><p class="dropdown_text_übung">Lernstatistik: Gemachte Pausen (Tag)</p></a>
-        </div>
+
+    <img src="/Bilder/Balken/Converter.png" alt="Dehnen" class="grafik">
+
+    <!--------------https://replit.com/@ConvertAPI/Any-to-PDF?v=1--------------------->
+
+    <div class="converter">
+        <h2>Dateien in PDF umwandeln</h2>
+        <form id="form">
+            <p>
+                <label for="fileInput">Dokument auswählen (docx, jpg, xlsx etc.):
+                    <input type="file" name="file" id="fileInput">
+                </label>
+                <input class="submit_converter" type="submit" value="Umwandeln">
+            </p>
+        </form>
+        <p id="result"> Herunterladen:
+            <a id="resultLink" href=""></a>
+        </p>
     </div>
+
+
+    <div class="converter">
+        <h2>PDF in DOCX umwandeln</h2>
+        <form id="form">
+            <p>
+                <label for="fileInput1">Dokument auswählen (PDF):
+                    <input type="file" name="file" id="fileInput1">
+                </label>
+            </p>
+        </form>
+        <p id="result1"> Herunterladen:
+            <a id="resultLink1" href=""></a>
+        </p>
     </div>
 
-<img src="/Bilder/Balken/Converter.png" alt="Dehnen" class="grafik">
-<br>
-
-
-
+    <br><br><br><br><br><br><br><br><br><br><br>
 
     <footer>
         <div class="footer">
             <p>&copy; Projekt im Modul Praxisprojekt präsentiert von Kimberly Plackenhohn und Eda Serttas</p>
-          </div>
+        </div>
     </footer>
 
 </body>
 
 <script language="javascript" type="text/javascript" src="/js/lernen.js"></script>
 <script language="javascript" type="text/javascript" src="./js/slide-down-menu.js"></script>
+<script language="javascript" type="text/javascript" src="/js/converter.js"></script>
 
 </html>
-
