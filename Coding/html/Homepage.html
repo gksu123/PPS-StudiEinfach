@@ -4,7 +4,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Projekt im Modul Entwicklungsprojekt</title>
+    <title>Praxisprojekt-StudiEinfach</title>
     <link rel="stylesheet" href="/css/home.css">
     <link rel="stylesheet" href="/css/fortschritt.css">
     <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.1.0/jquery.min.js"></script>
@@ -15,8 +15,8 @@
 </head>
 
 
-    <body>
-<!----https://www.w3schools.com/howto/howto_js_fullscreen_overlay.asp----->
+<body>
+    <!----https://www.w3schools.com/howto/howto_js_fullscreen_overlay.asp----->
     <div id="myNav" class="overlay">
         <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
         <div class="overlay-content">
@@ -25,15 +25,15 @@
             <a href="/html/Login/Login.html">Abmelden</a>
         </div>
     </div>
-
-
+    
+    
     <header>
         <div class="header">
             <h1 class="logo">StudiereEinfach</h1>
         </div>
     </header>
-
-       
+    
+        
     <div class="header2">
         <span class="scal" style="font-size:30px;cursor:pointer" onclick="openNav()">&#9776;</span>
         <a class="header-menu_1" href="/html/Homepage.html">Startseite</a>
@@ -48,11 +48,11 @@
         </div>
         </div>
         <div class="dropdown">
-            <a class="header-menu" href="/html/Kalender.html">Kalender</a>
+            <a class="header-menu">Kalender</a>
             <div class="dropdown_content">
-                <a class="dropdown_text"><p>Zum Kalender</p></a>
-                <a href="/html/Auswertung-Verlauf/woechentlich.html"><p class="dropdown_text_übung">Stundenplan</p></a>
-                <a href="/html/Praktikumsplan.html"><p class="dropdown_text_übung">Praktikumsplan</p></a>
+                <a class="dropdown_text" href="/html/Kalender.html"><p>Zum Kalender</p></a>
+                <a href="/html/Schnittstelle/Stundenplan.html"><p class="dropdown_text_übung">Stundenplan</p></a>
+                <a href="/html/Schnittstelle/Praktikumstermine.html"><p class="dropdown_text_übung">Praktikumsplan</p></a>
             </div>
             </div>
         <div class="dropdown">
@@ -74,7 +74,7 @@
     </div>
     </div>
 
-<img src="/Bilder/11.png" alt="Dehnen" class="grafik">
+<img src="/Bilder/11.png" class="grafik">
 <br>
     
 <!----------http://circle.firchow.net/--------------->
@@ -101,7 +101,7 @@
         <!-- green -->
         <div class="clearfix">
             <div class="c100 p25 green">
-                <span>50%</span>
+                <span>50%</span>            
                 <div class="slice">
                     <div class="bar"></div>
                     <div class="fill"></div>
@@ -133,19 +133,13 @@
             </div>
             
         </div>
-        <img src="/Bilder/Aufgaben_Homepage/Mathematik 1.png" alt="Dehnen" class="grafik3">
-        <img src="/Bilder/Aufgaben_Homepage/2.png" alt="Dehnen" class="grafik3">
+        <a href="/html/Fortschrittsanzeige/Aufgaben-MA1.html"><img src="/Bilder/Aufgaben_Homepage/Mathematik 1.png" alt="Dehnen" class="grafik3"></a>
+        <a href="/html/Fortschrittsanzeige/Aufgaben-MA2.html"><img src="/Bilder/Aufgaben_Homepage/2.png" alt="Dehnen" class="grafik3"></a>
         <img src="/Bilder/Aufgaben_Homepage/3.png" alt="Dehnen" class="grafik3">
         <img src="/Bilder/Aufgaben_Homepage/4.png" alt="Dehnen" class="grafik3">
         <!-- /green -->
 
-
-
     </div>
-
-
-
-
 
      <!----https://codepen.io/Tanya_Rybachuk/pen/jyxzEp----->
     <div class="number">  
@@ -196,9 +190,10 @@
 <script src='http://cdnjs.cloudflare.com/ajax/libs/jquery/2.1.3/jquery.min.js'></script>
 <script src='http://ajax.googleapis.com/ajax/libs/jqueryui/1.11.2/jquery-ui.min.js'></script>
 
-<script language="javascript" type="text/javascript" src="./js/gelernt_Home.js"></script>
-<script language="javascript" type="text/javascript" src="./js/slide-down-menu.js"></script>
+<script language="javascript" type="text/javascript" src="/js/slide-down-menu.js"></script>
 <script language="javascript" type="text/javascript" src="/js/fortschrittsanzeige.js"></script>
+<script language="javascript" type="text/javascript" src="/js/zaehler.js"></script>
+
 </html>
 
 

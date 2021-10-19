@@ -4,7 +4,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Projekt im Modul Entwicklungsprojekt</title>
+    <title>Praxisprojekt-StudiEinfach</title>
     <link rel="stylesheet" href="/css/home.css">
     <link rel="stylesheet" href="/css/fortschritt.css">
 
@@ -16,9 +16,8 @@
 
 </head>
 
-
-    <body>
-<!----https://www.w3schools.com/howto/howto_js_fullscreen_overlay.asp----->
+<body>
+    <!----https://www.w3schools.com/howto/howto_js_fullscreen_overlay.asp----->
     <div id="myNav" class="overlay">
         <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
         <div class="overlay-content">
@@ -27,15 +26,15 @@
             <a href="/html/Login/Login.html">Abmelden</a>
         </div>
     </div>
-
-
+    
+    
     <header>
         <div class="header">
             <h1 class="logo">StudiereEinfach</h1>
         </div>
     </header>
-
-       
+    
+        
     <div class="header2">
         <span class="scal" style="font-size:30px;cursor:pointer" onclick="openNav()">&#9776;</span>
         <a class="header-menu_1" href="/html/Homepage.html">Startseite</a>
@@ -50,11 +49,11 @@
         </div>
         </div>
         <div class="dropdown">
-            <a class="header-menu" href="/html/Kalender.html">Kalender</a>
+            <a class="header-menu">Kalender</a>
             <div class="dropdown_content">
-                <a class="dropdown_text"><p>Zum Kalender</p></a>
-                <a href="/html/Auswertung-Verlauf/woechentlich.html"><p class="dropdown_text_übung">Stundenplan</p></a>
-                <a href="/html/Auswertung-Verlauf/monatlich.html"><p class="dropdown_text_übung">Praktikumsplan</p></a>
+                <a class="dropdown_text" href="/html/Kalender.html"><p>Zum Kalender</p></a>
+                <a href="/html/Schnittstelle/Stundenplan.html"><p class="dropdown_text_übung">Stundenplan</p></a>
+                <a href="/html/Schnittstelle/Praktikumstermine.html"><p class="dropdown_text_übung">Praktikumsplan</p></a>
             </div>
             </div>
         <div class="dropdown">
@@ -76,17 +75,17 @@
     </div>
     </div>
 
-<img src="/Bilder/Balken/Mathematik1.png" alt="Dehnen" class="grafik">
+<img src="/Bilder/Balken/Mathematik1.png" class="grafik">
 
 <div class="progressbar-container">
     <div class="progressbar-bar"></div>
     <div class="progressbar-label"></div>
-  </div>
-  <div class = "ready"></div>
+</div>
+<div class = "ready"></div>
   
 <div>
     <label class="überschrift_privat"> Aufgaben
-        <input class="hochladen" type="button" id="hinzufuegen" name="files1[]" multiple />
+     <!--   <input class="hochladen" id="hinzufuegen" name="files1[]" multiple />-->
     </label>  
     
     <label class="überschrift_öffentlich"> Aufgabe 1
@@ -100,60 +99,6 @@
     <label class="überschrift_öffentlich"> Aufgabe 3
         <input class="hochladen" type="checkbox" name = "box3"/>
     </label>
-</div>
-
-
-
-
-
-<!-- Beispiel Eda: https://wiki.selfhtml.org/wiki/HTML/Tutorials/Formulare/Gliederung ------
-Beispiel Kim: https://www.codeseek.co/jamesbarnett/progress-bar-for-counting-checkboxes-ybvLB-->
-<!---
-<div>
-    <form action="manage_uploads.php" method="post" enctype="multipart/form-data">
-
-        <div class="progressbar-container">
-            <div class="progressbar-bar"></div>
-            <div class="progressbar-label"></div>
-          </div>
-          <div class = "ready"></div>
-
-<label class="überschrift_privat"> Aufgaben
-    <input class="hochladen" type="button" id="hinzufuegen" name="files1[]" multiple />
-</label>  
-
-<label class="überschrift_öffentlich"> Aufgabe 1
-    <input type="checkbox"name = "box1" />
-</label>  
-
-<label class="überschrift_öffentlich"> Aufgabe 2
-    <input type="checkbox" name = "box2"/>
-</label>  
-
-<label class="überschrift_öffentlich"> Aufgabe 3
-    <input type="checkbox" name = "box3"/>
-</label>--->
-
-    <!--    <progress id="fortschritt" value="0" max="3"></progress> -->
-
-    <!-----
-        <progress value="66" max="100" data-label="66%"></progress> 
-        <label class="überschrift_privat"> Aufgaben
-            <input class="hochladen" type="button" id="hinzufuegen" name="files1[]" multiple />
-        </label>  
-
-        <label class="überschrift_öffentlich"> Aufgabe 1
-            <input class="hochladen" type="checkbox" id="check" onchange="aktualisiere_progressbar()" checked/> 
-        </label>  
-
-        <label class="überschrift_öffentlich"> Aufgabe 2
-            <input class="hochladen" type="checkbox" id="check" onchange="aktualisiere_progressbar()" checked/>
-        </label>  
-
-        <label class="überschrift_öffentlich"> Aufgabe 3
-            <input class="hochladen" type="checkbox" id="check" onchange="aktualisiere_progressbar()"/>
-        </label>----->
-    </form>
 </div>
 
 <br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br>

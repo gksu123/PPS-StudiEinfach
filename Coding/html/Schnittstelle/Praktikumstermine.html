@@ -4,14 +4,19 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Projekt im Modul Entwicklungsprojekt</title>
-    <link rel="stylesheet" href="/css/home.css">
+    <title>Praxisprojekt-StudiEinfach</title>
+    <link rel="stylesheet" href="/css/praktikum.css">
+    <link rel="stylesheet" href="/css/prak-bootstrap.css">
     <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.1.0/jquery.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/vue@2/dist/vue.js"></script>
+
+    <script src="https://code.jquery.com/jquery-1.10.2.min.js"></script>
+	<script src="https://cdn.jsdelivr.net/npm/bootstrap@4.4.1/dist/js/bootstrap.bundle.min.js"></script>
 </head>
 
 
-    <body>
-<!----https://www.w3schools.com/howto/howto_js_fullscreen_overlay.asp----->
+<body>
+    <!----https://www.w3schools.com/howto/howto_js_fullscreen_overlay.asp----->
     <div id="myNav" class="overlay">
         <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
         <div class="overlay-content">
@@ -20,20 +25,20 @@
             <a href="/html/Login/Login.html">Abmelden</a>
         </div>
     </div>
-
-
+    
+    
     <header>
         <div class="header">
             <h1 class="logo">StudiereEinfach</h1>
         </div>
     </header>
-
-       
+    
+        
     <div class="header2">
         <span class="scal" style="font-size:30px;cursor:pointer" onclick="openNav()">&#9776;</span>
-        <a class="header-menu_1" href="/Homepage.html">Startseite</a>
+        <a class="header-menu_1" href="/html/Homepage.html">Startseite</a>
         <div class="dropdown">
-        <a class="header-menu" href="/Lernen.html">Lernen</a>
+        <a class="header-menu" href="/html/Lernen.html">Lernen</a>
         <div class="dropdown_content">
             <a class="dropdown_text_nichts"><p>Zum Lernen</p></a>
             <a href="/html/Lernen/Karteikarten.html"><p class="dropdown_text_übung">Karteikarten</p></a>
@@ -43,11 +48,11 @@
         </div>
         </div>
         <div class="dropdown">
-            <a class="header-menu" href="/Kalender.html">Kalender</a>
+            <a class="header-menu">Kalender</a>
             <div class="dropdown_content">
-                <a class="dropdown_text"><p>Zum Kalender</p></a>
-                <a href="/html/Auswertung-Verlauf/woechentlich.html"><p class="dropdown_text_übung">Stundenplan</p></a>
-                <a href="/html/Auswertung-Verlauf/monatlich.html"><p class="dropdown_text_übung">Praktikumsplan</p></a>
+                <a class="dropdown_text" href="/html/Kalender.html"><p>Zum Kalender</p></a>
+                <a href="/html/Schnittstelle/Stundenplan.html"><p class="dropdown_text_übung">Stundenplan</p></a>
+                <a href="/html/Schnittstelle/Praktikumstermine.html"><p class="dropdown_text_übung">Praktikumsplan</p></a>
             </div>
             </div>
         <div class="dropdown">
@@ -69,31 +74,150 @@
     </div>
     </div>
 
-<!--Templates// Mustache-->
+<img src="/Bilder/Balken/Praktikum.png" class="grafik">
+<br><br><br>
 
-<script id="itemGen" type="text/template">
-    <h1 id="headline">{{ labwork.label }}</h1>
-    <div id="items">
-        <h3>{{ titles.0.title }}</h3>
-        <p>{{ labwork.description }}</p>
-        <br>
-        <p>{{ date }}</p>
-        <p>{{ start }}</p>
-        <p>{{ end }}</p>
-        <p>{{ room.label }}</p>
+<!--  Main  -->
+
+<div class="container">
+    <div class="row">
+        <div class="col-md-12">
+            <div class="card card-white mb-5">
+                <div class="card-heading clearfix border-bottom mb-4" id="inf">
+                    <h2 class="card-title">Praktikumsanmeldungen/ Ausgewertete Praktika ({{ json[0].student.systemId }})</h2>
+                </div>
+                <div class="card-body">
+                    <ul class="list-unstyled" id="vue">
+                        <li class="position-relative booking">
+                            <div class="media">
+                                <div class="media-body">
+                                    <h5 class="mb-4">{{ json[7].labwork.label}}<span class="badge badge-primary mx-3">Ausstehend</span></h5>
+                                    <div class="mb-3">
+                                        <span class="mr-2 d-block d-sm-inline-block mb-2 mb-sm-0">Termin:</span>
+                                        <span class="light-gray">{{ json[7].label}}</span>
+                                    </div>
+                                    <div class="mb-3">
+                                        <span class="mr-2 d-block d-sm-inline-block mb-2 mb-sm-0">Datum:</span>
+                                        <span class="light-gray">{{ json[6].date}}</span>
+                                    </div>
+                                    <div class="mb-5">
+                                        <span class="mr-2 d-block d-sm-inline-block mb-1 mb-sm-0">Raum:</span>
+                                        <span class="border-right pr-2 mr-2">{{ json[7].room.label}}</span>
+                                        <span class="border-right pr-2 mr-2">{{ json[7].room.description}}</span>
+                                    </div>
+                                    <a href="#" class="btn-gray">Anmelden</a>
+                                </div>
+                            </div>
+                        </li>
+    
+                        <li class="position-relative booking">
+                            <div class="media">
+                                <div class="media-body">
+                                    <h5 class="mb-4">{{ json[6].labwork.label}}<span class="badge badge-success ml-3">Angemeldet</span></h5>
+                                    <div class="mb-3">
+                                        <span class="mr-2 d-block d-sm-inline-block mb-2 mb-sm-0">Termin:</span>
+                                        <span class="bg-light-blue">{{ json[6].label}}</span>
+                                    </div>
+                                    <div class="mb-3">
+                                        <span class="mr-2 d-block d-sm-inline-block mb-2 mb-sm-0">Datum:</span>
+                                        <span class="bg-light-blue">{{ json[6].date}}</span>
+                                    </div>
+    
+                                    <div class="mb-5">
+                                        <span class="mr-2 d-block d-sm-inline-block mb-1 mb-sm-0">Raum:</span>
+                                        <span class="border-right pr-2 mr-2">{{ json[6].room.label}}</span>
+                                        <span class="border-right pr-2 mr-2">{{ json[6].room.description}}</span>
+                                    </div>
+                                    <a href="#" class="btn-gray">Abmelden</a>
+                                </div>
+                            </div>
+                        </li>
+
+                        <li class="position-relative booking">
+                            <div class="media">
+                                <div class="media-body">
+                                    <h5 class="mb-4">{{ json[8].labwork.label}}<span class="badge badge-success ml-3">Angemeldet</span></h5>
+                                    <div class="mb-3">
+                                        <span class="mr-2 d-block d-sm-inline-block mb-2 mb-sm-0">Termin:</span>
+                                        <span class="bg-light-blue">{{ json[8].label}}</span>
+                                    </div>
+                                    <div class="mb-3">
+                                        <span class="mr-2 d-block d-sm-inline-block mb-2 mb-sm-0">Datum:</span>
+                                        <span class="bg-light-blue">{{ json[8].date}}</span>
+                                    </div>
+    
+                                    <div class="mb-5">
+                                        <span class="mr-2 d-block d-sm-inline-block mb-1 mb-sm-0">Raum:</span>
+                                        <span class="border-right pr-2 mr-2">{{ json[8].room.label}}</span>
+                                        <span class="border-right pr-2 mr-2">{{ json[8].room.description}}</span>
+                                    </div>
+                                    <a href="#" class="btn-gray">Abmelden</a>
+                                </div>
+                            </div>
+                        </li>
+    
+                        <li class="position-relative booking">
+                            <div class="media">
+                                <div class="media-body">
+                                    <h5 class="mb-4">{{ json[0].labwork.label}}<span class="badge badge-danger ml-3">Bestanden</span></h5>
+                                    <div class="mb-3">
+                                        <span class="mr-2 d-block d-sm-inline-block mb-2 mb-sm-0">Termin:</span>
+                                        <span class="bg-light-green">{{ json[0].label}}</span>
+                                    </div>
+                                    <div class="mb-3">
+                                        <span class="mr-2 d-block d-sm-inline-block mb-2 mb-sm-0">Datum:</span>
+                                        <span class="bg-light-green">{{ json[0].date}}</span>
+                                    </div>
+                                    <div>
+                                        <span class="mr-2 d-block d-sm-inline-block mb-1 mb-sm-0">Raum:</span>
+                                        <span class="border-right pr-2 mr-2">{{ json[0].room.label}}</span>
+                                        <span class="border-right pr-2 mr-2">{{ json[0].room.description}}</span>
+                                    </div>
+    
+                                </div>
+                            </div>
+                        </li>
+                        <li class="position-relative booking">
+                            <div class="media">
+                                <div class="media-body">
+                                    <h5 class="mb-4">{{ json[2].labwork.label}}<span class="badge badge-danger ml-3">Bestanden</span></h5>
+                                    <div class="mb-3">
+                                        <span class="mr-2 d-block d-sm-inline-block mb-2 mb-sm-0">Termin:</span>
+                                        <span class="bg-light-green">{{ json[2].label}}</span>
+                                    </div>
+                                    <div class="mb-3">
+                                        <span class="mr-2 d-block d-sm-inline-block mb-2 mb-sm-0">Datum:</span>
+                                        <span class="bg-light-green">{{ json[2].date}}</span>
+                                    </div>
+                                    <div>
+                                        <span class="mr-2 d-block d-sm-inline-block mb-1 mb-sm-0">Raum:</span>
+                                        <span class="border-right pr-2 mr-2">{{ json[2].room.label}}</span>
+                                        <span class="border-right pr-2 mr-2">{{ json[2].room.description}}</span>
+                                    </div>
+    
+                                </div>
+                            </div>
+                        </li>
+
+                    </ul>
+    
+                </div>
+            </div>
+    
+        </div>
     </div>
- </script>
+    </div>
 
-
-    <footer>
-        <div class="footer">
-            <p>&copy; Projekt im Modul Praxisprojekt präsentiert von Kimberly Plackenhohn und Eda Serttas</p>
-          </div>
-    </footer>
+    <br><br><br>
+<footer>
+    <div class="footer">
+        <p>&copy; Projekt im Modul Praxisprojekt präsentiert von Kimberly Plackenhohn und Eda Serttas</p>
+        </div>
+</footer>
 
 </body>
 
-<script language="javascript" type="text/javascript" src="/js/praktikumstermine.js"></script>
+<script language="javascript" type="text/javascript" src="/js/prak-vue.js"></script>
 <script language="javascript" type="text/javascript" src="/js/slide-down-menu.js"></script>
 
 </html>
