@@ -141,7 +141,7 @@
     </div>
 
      <!----https://codepen.io/Tanya_Rybachuk/pen/jyxzEp----->
-    <form method="post" action="http://127.0.0.1/html/Homepage.php" >
+    <form method="post" action="http://localhost/html/Homepage.php" >
         <div class="number">  
             <div class="button_wasser">
                 <details style="border-radius: 5px; background-color: rgb(248, 248, 248);" open>
@@ -182,6 +182,35 @@
         </div><br>
             <button id="add-btn" type="submit" name="action" value="Senden">Speichern</button>
     </form>
+
+    <?php
+    $stunden = filter_input(INPUT_POST, 'stunden');
+    $inf = "inf1359";
+
+  //  if (!empty($stunden)) {
+
+        $host = "localhost";
+        $dbusername = "gksu";
+        $dbpassword = "gksu";
+        $dbname = "pps";
+
+        // Create connection
+        $conn = new mysqli($host, $dbusername, $dbpassword, $dbname);
+        if (mysqli_connect_error()) {
+            die('Connect Error (' . mysqli_connect_errno() . ') '
+                . mysqli_connect_error());
+        } else {
+            $sql = "INSERT INTO stunden (userID, stunden)
+    values ('$inf', $stunden)";
+            if ($conn->query($sql)) {
+            } else {
+                echo "Error: " . $sql . "
+    " . $conn->error;
+            }
+            $conn->close();
+        }
+ //   }
+    ?>
 
     <br><br><br><br><br><br><br><br><br><br><br><br><br>
 
