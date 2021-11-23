@@ -133,32 +133,32 @@
                                         <tr class="inner-box" >
                                             <th scope="row">
                                                 <div class="event-date">
-                                                    <span>{{ json[31].date}}</span>
+                                                    <span>{{ json[1].date}}</span>
                                                 </div>
                                             </th>
                                             <td>
                                                 <div class="event-img">
-                                                    <img src="/Bilder/ProfessorIn/Hartmann.PNG" alt="" />
+                                                    <img src="/Bilder/ProfessorIn/Platzhalter.jpg" alt="" />
                                                 </div>
                                             </td>
                                             <td>
                                                 <div class="event-wrap">
-                                                    <h3><a href="https://www.th-koeln.de/personen/gerhard.hartmann/">{{ json[31].course.lecturer.lastname }}, {{ json[31].course.lecturer.firstname }}</a></h3>
+                                                    <h3><a href="https://www.th-koeln.de/personen/jan.kus/">{{ json[1].course.lecturer.lastname }}, {{ json[1].course.lecturer.firstname }}</a></h3>
                                                     <div class="meta">
                                                         <div class="time">
-                                                            <span>{{ json[31].start }} Uhr - {{ json[31].end }} Uhr</span>
+                                                            <span>{{ json[1].start }} Uhr - {{ json[0].end }} Uhr</span>
                                                         </div>
                                                     </div>
                                                 </div>
                                             </td>
                                             <td>
                                                 <div class="r-no">
-                                                    <span>{{ json[31].course.subModule.abbreviation }}</span>
+                                                    <span>{{ json[1].course.subModule.abbreviation }}</span>
                                                 </div>
                                             </td>
                                             <td>
                                                 <div class="r-no">
-                                                    <span> {{ json[31].room.label }} <br> Raum: {{ json[31].room.abbreviation }}</span>
+                                                    <span> {{ json[1].room.label }}</span>
                                                 </div>
                                             </td>
                                         </tr>
@@ -166,9 +166,10 @@
                                 </table>
                             </div>
                         </div>
+
                         <div class="tab-pane fade" id="profile" role="tabpanel" aria-labelledby="profile-tab">
                             <div class="table-responsive">
-                                <table class="table"  id="vue2">
+                                <table class="table">
                                     <thead>
                                         <tr>
                                             <th class="text-center"  scope="col">Datum</th>
@@ -179,45 +180,95 @@
                                         </tr>
                                     </thead>
                                     <tbody>
-                                        <tr class="inner-box">
+                                        <tr class="inner-box"  id="vue2">
                                             <th scope="row">
                                                 <div class="event-date">
-                                                    <span>{{ json[28].date}}</span>
+                                                    <span>{{ json[0].date}}</span>
                                                 </div>
                                             </th>
                                             <td>
                                                 <div class="event-img">
-                                                    <img src="/Bilder/ProfessorIn/Kohls.PNG" alt="" />
+                                                    <img src="/Bilder/ProfessorIn/Bertelsmeier.PNG" alt="" />
                                                 </div>
                                             </td>
                                             <td>
                                                 <div class="event-wrap">
-                                                    <h3><a href="https://www.th-koeln.de/personen/christian.kohls/">{{ json[28].course.lecturer.lastname }}, {{ json[28].course.lecturer.firstname }}</a></h3>
+                                                    <h3><a href="https://www.th-koeln.de/personen/birgit.bertelsmeier/">{{ json[0].course.lecturer.lastname }}, {{ json[0].course.lecturer.firstname }}</a></h3>
                                                     <div class="meta">
                                                         <div class="time">
-                                                            <span>{{ json[28].start }} Uhr - {{ json[28].end }} Uhr</span>
+                                                            <span>{{ json[0].start }} Uhr - {{ json[1].end }} Uhr</span>
                                                         </div>
                                                     </div>
                                                 </div>
                                             </td>
                                             <td>
                                                 <div class="r-no">
-                                                    <span>{{ json[28].course.subModule.abbreviation }}</span>
+                                                    <span>{{ json[0].course.subModule.abbreviation }}</span>
                                                 </div>
                                             </td>
                                             <td>
                                                 <div class="r-no">
-                                                    <span>{{ json[28].room.label }} <br> Raum: {{ json[28].room.abbreviation }}</span>
+                                                    <span>{{ json[0].room.label }}</span>
                                                 </div>
                                             </td>
                                         </tr>
+
+                                        <tr class="inner-box" id="vue4">
+                                            <th scope="row">
+                                                <div class="event-date">
+                                                    <span>{{ json[0].date}}</span>
+                                                </div>
+                                            </th>
+                                            <td>
+                                                <div class="event-img">
+                                                    <img src="/Bilder/ProfessorIn/Stahl.PNG" alt="" />
+                                                </div>
+                                            </td>
+                                            <td>
+                                                <div class="event-wrap">
+                                                    <h3><a href="https://www.th-koeln.de/personen/hans.stahl/">{{ json[0].course.lecturer.lastname }}, {{ json[0].course.lecturer.firstname }}</a></h3>
+                                                    <div class="meta">
+                                                        <div class="time">
+                                                            <span>{{ json[0].start }} Uhr - {{ json[2].end }} Uhr</span>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </td>
+                                            <td>
+                                                <div class="r-no">
+                                                    <span>{{ json[0].course.subModule.abbreviation }}</span>
+                                                </div>
+                                            </td>
+                                            <td>
+                                                <div class="r-no">
+                                                    <span>{{ json[0].room.label }} <br></span>
+                                                </div>
+                                            </td>
+                                        </tr>
+                                        
                                     </tbody>
                                 </table>
                             </div>
                         </div>
-                        <div class="tab-pane fade" id="contact" role="tabpanel" aria-labelledby="contact-tab">
+                        <div class="tab-pane fade" id="contact" role="tabpanel" aria-labelledby="contact">
                             <div class="table-responsive">
-                                <table class="table" id="vue3">
+                                <table class="table">
+                                    <thead>
+                                        <tr>
+                                            <th class="text-center" scope="col">Datum</th>
+                                            <th class="text-center"  scope="col">Professor/in</th>
+                                            <th scope="col">Session</th>
+                                            <th scope="col">Modul</th>
+                                            <th scope="col">Raum</th>
+                                        </tr>
+                                    </thead>
+                                </table>
+                            </div>
+                        </div>
+
+                        <div class="tab-pane fade" id="sunday" role="tabpanel" aria-labelledby="sunday-tab">
+                            <div class="table-responsive">
+                                <table class="table">
                                     <thead>
                                         <tr>
                                             <th class="text-center" scope="col">Datum</th>
@@ -227,7 +278,7 @@
                                             <th scope="col">Raum</th>
                                         </tr>
                                     </thead>
-                                    <tr class="inner-box">
+                                    <tr class="inner-box" id="vue3">
                                         <th scope="row">
                                             <div class="event-date">
                                                 <span>{{ json[0].date}}</span>
@@ -235,15 +286,15 @@
                                         </th>
                                         <td>
                                             <div class="event-img">
-                                                <img src="/Bilder/ProfessorIn/Konen.PNG" alt="" />
+                                                <img src="/Bilder/ProfessorIn/Noss.PNG" alt="" />
                                             </div>
                                         </td>
                                         <td>
                                             <div class="event-wrap">
-                                                <h3><a href="https://www.th-koeln.de/personen/wolfgang.konen/">{{ json[0].course.lecturer.lastname }}, {{ json[0].course.lecturer.firstname }}</a></h3>
+                                                <h3><a href="https://www.th-koeln.de/personen/christian.noss/">{{ json[0].course.lecturer.lastname }}, {{ json[0].course.lecturer.firstname }}</a></h3>
                                                 <div class="meta">
                                                     <div class="time">
-                                                        <span>{{ json[0].start }} Uhr - {{ json[0].end }} Uhr</span>
+                                                        <span>{{ json[1].start }} Uhr - {{ json[0].end }} Uhr</span>
                                                     </div>
                                                 </div>
                                             </div>
@@ -255,58 +306,43 @@
                                         </td>
                                         <td>
                                             <div class="r-no">
-                                                <span>{{ json[0].room.label }} <br> Raum: {{ json[0].room.abbreviation }}</span>
+                                                <span>{{ json[0].room.label }}</span>
                                             </div>
                                         </td>
                                     </tr>
-                                    <tr class="inner-box">
+                                    <tr class="inner-box"  id="vue5">
                                         <th scope="row">
                                             <div class="event-date">
-                                                <span>{{ json[56].date}}</span>
+                                                <span>{{ json[1].date}}</span>
                                             </div>
                                         </th>
                                         <td>
                                             <div class="event-img">
-                                                <img src="/Bilder/ProfessorIn/Lindt.PNG" alt="" />
+                                                <img src="/Bilder/ProfessorIn/Kornacher.PNG" alt="" />
                                             </div>
                                         </td>
                                         <td>
                                             <div class="event-wrap">
-                                                <h3><a href="https://www.th-koeln.de/personen/irma.lindt/">{{ json[56].course.lecturer.lastname }}, {{ json[56].course.lecturer.firstname }}</a></h3>
+                                                <h3><a href="https://www.th-koeln.de/personen/hans.kornacher/">{{ json[0].course.lecturer.lastname }}, {{ json[0].course.lecturer.firstname }}</a></h3>
                                                 <div class="meta">
                                                     <div class="time">
-                                                        <span>{{ json[56].start }} Uhr - {{ json[56].end }} Uhr</span>
+                                                        <span>{{ json[4].start }} Uhr - {{ json[6].end }} Uhr</span>
                                                     </div>
                                                 </div>
                                             </div>
                                         </td>
                                         <td>
                                             <div class="r-no">
-                                                <span>{{ json[56].course.subModule.abbreviation }}</span>
+                                                <span>{{ json[0].course.subModule.abbreviation }}</span>
                                             </div>
                                         </td>
                                         <td>
                                             <div class="r-no">
-                                                <span>{{ json[56].room.label }} <br> Raum: {{ json[56].room.abbreviation }}</span>
+                                                <span>{{ json[0].room.label }}</span>
                                             </div>
                                         </td>
                                     </tr>
                                 </tbody>
-                                </table>
-                            </div>
-                        </div>
-                        <div class="tab-pane fade" id="sunday" role="tabpanel" aria-labelledby="sunday-tab">
-                            <div class="table-responsive">
-                                <table class="table">
-                                    <thead>
-                                        <tr>
-                                            <th class="text-center" scope="col">Datum</th>
-                                            <th class="text-center" scope="col">Professor/in</th>
-                                            <th scope="col">Session</th>
-                                            <th scope="col">Modul</th>
-                                            <th scope="col">Raum</th>
-                                        </tr>
-                                    </thead>
                                 </table>
                             </div>
                         </div>
@@ -321,6 +357,39 @@
                                             <th scope="col">Modul</th>
                                             <th scope="col">Raum</th>
                                         </tr>
+                                        <tbody>
+                                            <tr class="inner-box"  id="vue6">
+                                                <th scope="row">
+                                                    <div class="event-date">
+                                                        <span>{{ json[0].date}}</span>
+                                                    </div>
+                                                </th>
+                                                <td>
+                                                    <div class="event-img">
+                                                        <img src="/Bilder/ProfessorIn/Kornacher.PNG" alt="" />
+                                                    </div>
+                                                </td>
+                                                <td>
+                                                    <div class="event-wrap">
+                                                        <h3><a href="https://www.th-koeln.de/personen/hans.kornacher/">{{ json[0].course.lecturer.lastname }}, {{ json[0].course.lecturer.firstname }}</a></h3>
+                                                        <div class="meta">
+                                                            <div class="time">
+                                                                <span>{{ json[0].start }} Uhr - {{ json[5].end }} Uhr</span>
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                </td>
+                                                <td>
+                                                    <div class="r-no">
+                                                        <span>{{ json[0].course.subModule.abbreviation }}</span>
+                                                    </div>
+                                                </td>
+                                                <td>
+                                                    <div class="r-no">
+                                                        <span>{{ json[0].room.label }}</span>
+                                                    </div>
+                                                </td>
+                                            </tr>
                                     </thead>
                                 </table>
                             </div>
